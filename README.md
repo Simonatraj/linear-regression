@@ -32,7 +32,9 @@ import numpy as np
 from linear_regression import LinearRegression
 
 # Sample data
+
 X = np.array([[1, 2], [3, 4], [5, 6]])  # Feature matrix
+
 y = np.array([3, 7, 11])               # Target values
 
 # Initialize and train the model
