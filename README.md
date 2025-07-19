@@ -16,13 +16,13 @@ NumPy (pip install numpy)
 Installation
 Follow these steps to set up the project locally:
 
-Clone the repository:git clone https://github.com/Simonatraj/linear-regression.git
+Clone the repository: git clone https://github.com/Simonatraj/linear-regression.git
 
 
-Navigate to the project directory:cd linear-regression
+Navigate to the project directory: cd linear-regression
 
 
-Install dependencies:pip install numpy
+Install dependencies: pip install numpy
 
 
 
