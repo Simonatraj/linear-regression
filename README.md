@@ -1,76 +1,59 @@
-Linear Regression
+# Linear Regression from Scratch
 
-Overview
+Welcome to the **Linear Regression from Scratch** project! This repository demonstrates the implementation of a simple linear regression algorithm using both a Jupyter Notebook and a standalone Python script.
 
-This project implements a simple Linear Regression model from scratch using Python and NumPy. The model uses gradient descent to optimize the weights and bias for predicting continuous target values based on input features.
-Features
+## Overview
 
-Custom implementation of linear regression without relying on external machine learning libraries.
-Configurable learning rate and number of iterations for gradient descent.
-Supports multi-feature datasets for training and prediction.
-Lightweight and easy to understand for educational purposes.
+Linear regression is a foundational machine learning algorithm often used to model the linear relationship between a dependent variable and one or more independent variables. This project provides:
 
-Requirements
+- A step-by-step notebook for hands-on exploration.
+- A Python script for quick execution and reuse.
 
-Python 3.6 or higher
+## Requirements
 
-NumPy (pip install numpy)
+To run this project, ensure you have:
 
-Installation
+- Python 3.x
+- NumPy
+- Matplotlib (recommended for notebook visualizations)
+- Jupyter Notebook (for `.ipynb` file)
 
-Follow these steps to set up the project locally:
+Install dependencies with:
 
-Clone the repository: git clone https://github.com/Simonatraj/linear-regression.git
+```bash
+pip install numpy matplotlib jupyter
+```
 
+## Getting Started
 
-Navigate to the project directory: cd linear-regression
+1. **Clone the repository:**
 
+   ```bash
+   git clone https://github.com/Simonatraj/linear-regression.git
+   cd linear-regression
+   ```
 
-Install dependencies: pip install numpy
+2. **Run the Jupyter Notebook:**
 
+   ```bash
+   jupyter notebook
+   ```
+   - Open `Linear_regression_algorithm.ipynb` for an interactive walkthrough.
 
-Usage
+3. **Run the Python Script:**
 
-The LinearRegression class can be used to train a model on a dataset and make predictions. Below is an example of how to use the code:
+   ```bash
+   python linear_regression.py
+   ```
+   - Follow any console instructions or edit the script with your own data arrays.
 
-import numpy as np
+## Usage
 
-from linear_regression import LinearRegression
+- **Notebook**: Step through the cells to see data loading, model parameter calculations (slope and intercept), predictions, and result visualization.
+- **Script**: Imports data, performs regression, prints results. Adapt it easily for other datasets or integrate in larger projects.
 
-# Sample data
+## Example Results
 
-X = np.array([[1, 2], [3, 4], [5, 6]])  # Feature matrix
-
-y = np.array([3, 7, 11])               # Target values
-
-# Initialize and train the model
-
-model = LinearRegression(lr=0.01, n_iters=1000)
-
-model.fit(X, y)
-
-# Make predictions
-
-X_test = np.array([[2, 3], [4, 5]])
-
-predictions = model.predict(X_test)
-
-print(predictions)
-
-Parameters
-
-lr: Learning rate for gradient descent (default: 0.0001)
-
-n_iters: Number of iterations for gradient descent (default: 1000)
-
-Example Output
-
-For the above example, the output might look like:
-[4.85, 8.92]
-
-Notes
-
-Ensure your input features (X) are a 2D NumPy array and the target values (y) are a 1D NumPy array.
-The model assumes a linear relationship between features and target values.
-You may need to tune the learning rate (lr) and number of iterations (n_iters) for optimal convergence, depending on your dataset.
+- The notebook will display a scatter plot of the data and the best-fit regression line.
+- Output includes regression coefficients (slope, intercept) and evaluation (e.g., mean squared error).
 
