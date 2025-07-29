@@ -1,7 +1,5 @@
 # Linear Regression from Scratch
 
-Welcome to the **Linear Regression from Scratch** project! This repository demonstrates the implementation of a simple linear regression algorithm using both a Jupyter Notebook and a standalone Python script.
-
 ## Overview
 
 Linear regression is a foundational machine learning algorithm often used to model the linear relationship between a dependent variable and one or more independent variables. This project provides:
